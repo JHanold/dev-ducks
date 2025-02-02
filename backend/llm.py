@@ -8,7 +8,7 @@ OPENAI_KEY = os.getenv("OPENAI-API-KEY")
 
 # Define prompt template
 PROMPT_TEMPLATE = PromptTemplate.from_template(
-    "Create a list of {count} imaginary Twitch chat messages with imaginary Twitch usernames reacting to aspects of the following code. Make the messages relevant to the code. "
+    "Create a list of {count} imaginary Twitch chat messages with imaginary Twitch usernames reacting to aspects of the following code constructively as if all the viewers are developers. Make the messages relevant to the code."
     "The response should be in the format 'username:message' (with one per line). If the code cuts off, assume that it isn't an error. \n\nCode:\n{code}"
 )
 
